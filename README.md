@@ -1,29 +1,9 @@
 # next13-auth-base
 
-## Create Next 13 app
+Setup a basic Next13 app with a Home page and About page.
 
+Under `src` create `app` for pages, and `components` structure.
 
+Add SaaS styling and change to `.scss`
 
-Configure paths in jsconfig.json
-```
-{
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/components/*": ["components/*"],
-      "@/app/*": ["app/*"]
-   }
-  }
-}
-```
-
-## Update the NextJS Bootstrap
-
-Styling SaaS
-
-In src/app change global.css to .scss and change import in layout.js.
-
-and delete .css imports in page.js. Change import
-
-npm i sass@1.63.6
-npm run dev
+Create a `Providers` shell to use in layout. Root landing page pulls in Home page.
